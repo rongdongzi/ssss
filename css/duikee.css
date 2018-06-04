@@ -1,0 +1,177 @@
+
+.clearfix::after,
+.clearfix::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+.mui-bar-tab {
+    bottom: 0;
+    display: table;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    table-layout: fixed;
+    border-top: 0;
+    border-bottom: 0;
+    -webkit-touch-callout: none;
+}
+
+.two-icon-yy{
+    background: url("../images/versionTwo/two-icon-yy.png") no-repeat;
+    width: 13px;
+    height: 14px;
+    background-size: 13px 14px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+/*.click-box {*/
+    /*position: fixed;*/
+    /*top: 50px;*/
+    /*z-index: 999;*/
+/*}*/
+/*.empty-f{*/
+    /*position: fixed;*/
+    /*top: 130px;*/
+    /*z-index: 999;*/
+/*}*/
+/*.mui-bar-nav~.mui-content.index-con{*/
+    /*margin-top: 90px;*/
+/*}*/
+/*.click-box{*/
+    /*width: 100%;*/
+    /*height :80px;*/
+    /*padding-top:15px;*/
+    /*background-color: #fff;*/
+/*}*/
+/*.click-bar{*/
+    /*width: 250px;*/
+    /*height: 30px;*/
+    /*margin: 0 auto;*/
+/*}*/
+.mui-segmented-control{
+    border: 1px solid #75191C;
+    border-radius: 25px;
+}
+.mui-segmented-control .mui-control-item.mui-active{
+    color: #fff;
+    background-color: #75191C;
+}
+.mui-segmented-control .mui-control-item{
+    color: #75191C;
+    border: 1px solid #75191C;
+
+
+}
+.empty{
+    width: 100%;
+    height: 10px;
+    background-color: #F0F0F0;
+}
+.price{
+    width: 100%;
+    padding: 0 15px;
+}
+
+.gdb-icon-dhq,
+.juxing{
+    background: url("../images/transition/gdb-icon-dhq.png") no-repeat;
+    width: 13px;
+    height: 14px;
+    background-size: 13px 14px;
+    display: inline-block;
+    padding-top: 0px;
+}
+.juxing{
+    background: url("../images/transition/juxing.png") no-repeat;
+
+}
+
+.price,
+.hot {
+    width: 100%;
+    background: white;
+    padding: 0 12px;
+}
+
+.price h3,
+.hot h3 {
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 20px;
+    color: black;
+    font-weight: 700;
+    display: inline-block;
+    padding-left: 5px;
+
+}
+
+.price li,
+.hot li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    height: 75px;
+
+}
+.price li a,
+.hot li a {
+    font-size: 12px;
+    color: #434343;
+}
+.price li a i,
+.hot li a i{
+    font-style: normal;
+    color: #3B3B3B;
+}
+.price li a img,
+.hot li a img {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+}
+.price p,
+.hot p {
+
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #D6D6D6;
+    margin: 10px 0;
+    clear: both;
+}
+.hot {
+    margin-bottom: 50px;
+}
+.two-icon-home{
+    background: url("./images/transition/home.png") no-repeat;
+}
+
+.hide {
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.mui-search{
+    width:70%;
+    /*margin-left: 20px;*/
+}
+
+
+.free{
+    font-size: 14px;
+    background:green;
+}
+.mui-segmented-control.mui-segmented-control-inverted.mui-segmented-control-vertical .mui-control-item{
+    height: 50px;
+    line-height: 50px;
+}
+
+
+

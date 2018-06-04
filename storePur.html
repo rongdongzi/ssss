@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>店铺详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone = no"/>
+
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/commonTWO.css">
+</head>
+<body>
+<main>
+    <div class="shop-details">
+        <div class="shop-title">
+            <div class="col-xs-3">
+                <a href="#" onclick="javascript:history.back(-1);"><i class="two-icon-left-arrow"></i></a>
+            </div>
+            <div class="col-xs-9">
+                <h5 class="mui-ellipsis">仟佶西饼（武汉商务区2号店）</h5>
+            </div>
+        </div>
+
+
+        <div class="two-pay-page">
+            <div class="mui-table-view">
+                <div class="mui-table-view-cell">
+                    <h4>付款金额</h4>
+                    <span>￥</span>
+                    <input type="text" placeholder="请向店员咨询" />
+                </div>
+                <div class="mui-table-view-cell"></div>
+            </div>
+
+            <div class="mui-table-view">
+                <div class="mui-table-view-cell">
+                    <p>本次买单金额<span>￥10.00</span></p>
+                    <p class="red-dk"><i class="two-icon-hb"></i>红包抵扣<span>-￥5.00</span></p>
+                </div>
+                <div class="mui-table-view-cell text-right">
+                    <p>已优惠￥5<small>小计</small><strong>￥5.00</strong></p>
+                </div>
+            </div>
+
+            <div class="two-pay-style">
+                <div class="mui-input-group">
+                    <div class="mui-input-row mui-radio">
+                        <label><i class="two-icon-wx"></i>微信支付</label>
+                        <input name="radio1" type="radio" checked />
+                    </div>
+                    <div class="mui-input-row mui-radio">
+                        <label><i class="two-icon-zfb"></i>支付宝支付</label>
+                        <input name="radio1" type="radio" />
+                    </div>
+                    <div class="mui-input-row mui-radio">
+                        <label><i class="two-icon-xfj"></i>商家消费金支付<small>原价，不享受红包</small></label>
+                        <input name="radio1" type="radio" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="two-confirm-pay">
+                <a href="../paySuccess.html">确认支付￥<span>5.00</span></a>
+            </div>
+
+
+
+        </div>
+    </div>
+</main>
+
+
+<script src="../js/mui.min.js"></script>
+</body>
+</html>

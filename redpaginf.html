@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>红包信息</title>
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone = no" />
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+<style>
+  
+    .redpaginf-header img {
+        width: 100%;
+        height: 50px;
+    }
+
+    .redpaginf-top {
+        width: 100%;
+        height: 110px;
+        font-size: 16px;
+        background: url("images/r-imgs/矩形背景2@3x.png") no-repeat;
+        background-size: cover;
+        /* font-weight: 600; */
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        /* background-color: #ec1813; */
+    }
+
+    .redpaglogo-heaedr {
+        width: 100%;
+        text-align: center;
+        /* position: absolute; */
+        background-color: #f5f5f5;
+        top: 80px;
+    }
+
+    .redpaglogo-center img {
+        width: 60px;
+        height: 50px;
+        /* margin: 0 auto; */
+        position: absolute;
+        margin-right: 10px;
+        right: 39%;
+        top: -20px;
+
+    }
+
+    .redpaglogo-center {
+        /* margin-top: 120px; */
+        height: 50px;
+        position: relative;
+        /* background-color: #f5f5f5; */
+        text-align: center;
+    }
+
+    .redpagcontent-header {
+        background-color: #f5f5f5;
+        text-align: center;
+    }
+
+    .redpagtext {
+        text-align: center;
+        background-color: #f5f5f5;
+        color: #666666;
+        height: 20px;
+        position: relative;
+        /* display: inline; */
+    }
+    .redpagcontent-header-bg{
+        position: absolute;
+    }
+    .redpagtext p {
+        font-size: 14px;
+    }
+
+    .redpagtext span {
+        position: absolute;
+        font-size: 10px;
+        height: 14px;
+        line-height: 14px;
+        padding: 0 5px;
+        color: #fff;
+        background-color: #ff4446;
+        border-radius: 9px;
+        right: 29%;
+        top: 3px;
+    }
+    .redpagcontent-header-bg{
+        width: 100px;
+        height: 15px;
+        line-height: 15px;
+        position: absolute;
+        background: url("images/r-imgs/圆角矩形5@3x.png") no-repeat;
+        background-size: 100% 100%;
+        top: 17px;
+        right: 44px;
+        font-size: 10px;
+        color: #fff;
+
+    }
+
+    .redpagcontent-header {
+        padding-top: 25px;
+        position: relative;
+    }
+    .redpagcontent-header h3 span{
+        font-size: 20px;
+    }
+    .redpagcontent-header h3 {
+        color: #333333;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .redpagcontent-header p {
+        color: #4d4d4d;
+        font-size: 11px;
+    }
+
+    .redpagcontent-person {
+        background-color: #f5f5f5;
+        overflow: hidden;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .redpagcontent-person ul li {
+        width: 50%;
+        float: left;
+    }
+    .redpagcontent-person ul li a img{
+        width: 21px;
+        height: 20px;
+    }
+    .redpagcontent-person ul li:first-child{
+       padding-left: 40px;
+    }
+    .redpagcontent-person ul li:last-child{
+        padding-left: 10px;
+    }
+    .redpagcontent-person ul li:last-child a{
+        color: #4d4d4d!important;
+        font-size: 12px;
+    }
+    .redpag-banner{
+        padding: .4rem .6rem;
+        background-color: #fff;
+    }
+    .redpag-banner img{
+        height: 130px;
+        width: 100%;
+    }
+    .redpag-banner-center h3{
+        color: #4d4d4d;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .redpag-banner-center p{
+        display: inline-block;
+        font-size: 11px;
+        color: #4d4d4d;;
+    }
+    .redpag-banner-center p:first-child{
+        font-weight: 500;
+    }
+    .redpag-banner-center p:last-child{
+        color: #808080!important;
+    }
+    .redpag-center-p1{
+        color: #808080!important;
+    }
+    .redpag-banner-center a{
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+        margin-bottom: 0;
+        padding: 5px 0;
+        letter-spacing:2px;
+        /* font-weight: 600; */
+        width: 140px;
+        color:#fff;
+        font-size: 15px;
+        background-color: #fd3133;
+	    border-radius: 10px;
+    }
+    .redpag-banner-center span{
+        text-align: center;
+        color: #414141;
+        font-size: 10px;
+        width: 100%;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .r-content1{
+        background-color: #f5f5f5;
+    }
+    .leaver-message{
+        /* padding: 5px .5rem; */
+        /* margin-top: 10px; */
+        /* position: relative; */
+        /* padding: 5px 0; */
+        border-bottom: 1px solid #e8e2e2;
+        overflow: hidden;
+    }
+
+    .redpag-banner-center{
+        padding-top: 10px;
+    }
+    .leaver-message ul li{
+        float: left;
+        width: 50%;
+        text-align: center;
+        padding: 5px 0;
+    }
+    .leaver-message ul .active a{
+        color: #fd3133;
+    }
+    .leaver-message ul li a{
+        font-size: 15px;
+        color: #666666;
+        font-weight: 600;
+    }
+    .leaver-bottom-text{
+        padding: 10px .5rem;
+    }
+   .leaver-bottom-text h3{
+       font-size: 15px;
+       font-weight: 600;
+       color: #4d4d4d;
+   }
+   .leaver-bottom-text  p{
+       text-align: center;
+       font-size: 18px;
+       color: #4d4d4d;
+       margin: 15px 0;
+       font-weight: 500;
+   }
+   .leaver-bottom-text:last-child ul li{
+       float: none!important;
+       width: 100%;
+   }
+   .leaver-bottom-text-ul{
+       padding: 0!important;
+   }
+   .leaver-bottom-text:last-child ul{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 0;
+   }
+   .leaver-bottom-text ul:first-child ul{
+       padding-top:0;
+   }
+   .leaver-bottom-text span{
+       font-size: 15px;
+       color: #4d4d4d;
+       /* font-weight: 600; */
+      /* margin-bottom: 10px; */
+   }
+   .leaver-bottom-text ul{
+       overflow: hidden;
+       margin-top: 10px;
+   }
+   .span-red1{
+       font-weight: 600;
+   }
+  
+   .leaver-bottom-text ul li{
+       float: left;
+       width: 32.3%;
+       margin-right: 1%;
+   }
+   .leaver-bottom-text ul li img{
+       height: 85px;
+   }
+   .leaver-bottom-text-box{
+       margin-top: 20px;
+   }
+   .leaver-bottom-text-box h5{
+        color: #4d4d4d;
+        font-size: 15px;
+        font-weight: 600;
+   }
+   .leaver-bottom-text-box h3{
+        color: #4d4d4d;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 20px;
+   }
+   .leaver-bottom-text-box p{
+       text-align: left;
+       color: #4d4d4d;
+       font-size: 15px;
+   }
+   .leaver-bottom-text ul li a span{
+        color: #808080;
+        font-size: 13px;
+   }
+   .leaver-bottom-text{
+       /* display: none; */
+   }
+   .leaver-botttom-text-active{
+       display: block
+   }
+   .leaver-bottom-text ul li a span:last-child{
+       font-weight: 600;
+       color: #333333;
+       padding-left: 40px;
+   }
+   .leaver-bottom-text ul{
+       padding: 10px .7rem;
+   }
+   .leaver-b-box{
+       width: 100%;
+       /* padding: 10px 10px; */
+
+   }
+   .leaver-bottom-text:first-child{
+       /* padding: .7rem!important; */
+       padding: 10px .5rem; 
+   }
+
+   .leaver-bottom-text{
+       display: none;
+       background-color: #fff;
+   }
+   .leaver-active{
+       display: block
+   }
+   .leaver-b-box h3{
+        font-weight: 600;
+       color: #333333;
+       font-size: 15px;
+       /* padding-left: 10px; */
+       margin-bottom: 10px;
+       padding-bottom: 5px;
+       border-bottom: 1px solid #eae8e8
+   }
+   .leaver-b-box img{
+       width: 100%;
+       /* padding: 0 .4rem; */
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+    <div class="r-content r-content1">
+        <!-- header -->
+        <div class="redpaginf-top">
+            
+        </div>
+        <div class="redpaglogo-center">
+            <img src="images/r-imgs/icon@3x.png" alt="">
+            <!-- <p>兑客广告</p>
+                <span>全国</span> -->
+        </div>
+        <div class="redpagtext">
+            <p>兑客广告</p>
+            <span>全国</span>
+        </div>
+        <div class="redpagcontent-header">
+            <h3>0.0039<span>元</span></h3>
+            <p>已存入钱包</p>
+            <div class="redpagcontent-header-bg">
+                    +0.1877红包股
+            </div>
+        </div>
+        <div class="redpagcontent-person">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/r-imgs/组8@2x.png" alt="" style="display:block; float:left" />
+                        <img src="images/r-imgs/组9@2x.png" alt="" style="display:block; float:left" />
+                        <img src="images/r-imgs/组10@2x.png" alt="" style="display:block; float:left" />
+                        <img src="images/r-imgs/组11@2x.png" alt="" style="display:block; float:left" />
+                        <img src="images/r-imgs/组12@2x.png" alt="" style="display:block; float:left" />
+                        <img src="images/r-imgs/组13@2x.png" alt="" style="display:block; float:left" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">10000000+人领取</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="redpag-banner">
+            <img src="images/r-imgs/图层4@3x.png" alt="">
+
+            <div class="redpag-banner-center">
+                <h3>创客贴咖啡</h3>
+                <p>武汉市王家湾海天欢乐购2F</p><p class="fr redpag-center-p1"><100m</p>
+                <a href="#">领劵享优惠</a>
+                <span>用券后抢红包金额增大1倍</span>
+            </div>
+        </div>
+
+        <!-- 留言 -->
+        <div class="leaver-message">
+            <ul>
+                <li class="active"><a href="javascript:;">商家介绍</a></li>
+                <li><a href="javascript:;">使用须知</a></li>
+            </ul>
+        </div>
+        <div class="leaver-bottom-text leaver-active">
+            <h3>品牌介绍:</h3>
+            <p>一个专发红包和优惠券的平台</p>
+            <span class="span-red1">店铺详情:</span>
+            <ul class="leaver-bottom-text-ul">
+               <li><img src="images/r-imgs/图层6拷贝2@2x.png" alt=""></li>
+               <li><img src="images/r-imgs/图层6拷贝2@2x.png" alt=""></li>
+               <li><img src="images/r-imgs/图层6拷贝2@2x.png" alt=""></li>               
+            </ul>
+            <div class="leaver-bottom-text-box">
+                <h5>营业时间: &nbsp;&nbsp;&nbsp;周一到周日10:00-21:00</h5>
+                <h3>优惠活动: </h3>
+                <p>1、满xx减xx</p>
+                <p>2、</p>
+            </div>
+        </div>
+        <div class="leaver-bottom-text">
+            <ul>
+                <li><a href="">
+                    <span>优惠说明</span><span>兑客礼包兑换券；不可与其他优惠共享</span>
+                </a></li>
+                <li><a href="">
+                    <span>有效日期</span><span>2018.04.20-2018.06.19</span>
+                    </a>
+                </li>
+                <li><a href="">
+                    <span>可用时段</span><span>周一至周日 全天</span>
+                </a></li>
+                <li><a href="">
+                    <span>使用须知</span><span>每人限领1张</span>
+                </a></li>
+            </ul>
+            <div class="leaver-b-box">
+                <h3>图文介绍</h3>
+                <img src="images/r-imgs/图层6@3x.png" alt="">
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+<!-- 引入JS -->
+<script src="./js/jquery-3.3.1.min.js "></script>
+<script src="./js/rem.js"></script>
+<script>
+window.onload=function(){
+    // 倒计时5s
+    var redpaginf=document.querySelector(".redpaginf-top")
+    redpaginf.innerHTML=5;
+    console.log(redpaginf.innerHTML)
+    // var timer=null; 
+    var timer=setInterval(function(){
+        redpaginf.innerHTML--;
+        if(parseInt(redpaginf.innerHTML)<=0){
+            // redpaginf.innerHTML=0
+            clearInterval(timer)
+            console.log(redpaginf.innerHTML)
+        }
+       
+    },1000)
+
+
+    // 底部tab栏切换
+    var c = document.querySelector(".leaver-message").querySelectorAll("li")
+    var cp =document.querySelectorAll(".leaver-bottom-text")
+    console.log(cp)
+    for (var i = 0; i < c.length; i++) {
+            c[i].index=i;
+            c[i].onclick = function () {
+                for (var i = 0; i < c.length; i++) {
+                    c[i].className = ""
+                    cp[i].className="leaver-bottom-text"
+                }
+                c[this.index].className = "active"
+                cp[this.index].className ="leaver-bottom-text leaver-active"
+            }
+
+        }
+        
+}
+
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <title>兑客商城</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone = no" />
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/commonTWO.css">
+    <style>
+        body {
+            background-color: #fff;
+        }
+        
+        .mui-backdrop {
+            top: 45px;
+        }
+        
+        .box {
+            width: 100%;
+            height: 45px;
+            position: fixed;
+            top: 0;
+            background-color: #be5b56;
+            z-index: 999;
+        }
+        
+        .hot-screen {
+            padding-top: 45px;
+        }
+        
+        .hot-list-1 {
+            border-bottom: 10px solid #F0F0F0;
+        }
+        
+        .hot-list-1:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="hot-screen">
+            <div class="box">
+                <div class="mui-content mui-NO">
+                    <!-- <a class="return-arrow" href="lmsj/MotherChild.html">
+                        <i class="two-icon-left-arrow"></i>
+                    </a> -->
+                    <a href="#picture" class="mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">
+                        <p id="info">NO.1</p>
+                        <i class="two-icon-bottom-arrow"></i>
+                    </a>
+                </div>
+            </div>
+            <!--下拉筛选-->
+            <div id="picture" class="mui-popover mui-popover-action mui-popover-bottom hot-selling">
+                <ul class="mui-table-view">
+                    <li class="mui-table-view-cell col-xs-2">
+                        <span>NO.1</span>
+                    </li>
+                    <li class="mui-table-view-cell col-xs-2">
+                        <a href="#">花王</a>
+                    </li>
+                    <li class="mui-table-view-cell col-xs-2">
+                        <a href="#">帮保洁</a>
+                    </li>
+                    <li class="mui-table-view-cell col-xs-2">
+                        <a href="#">尤妮佳</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="hot-screen-list">
+                <div class="container-fluid">
+                    <div class="hot-list-1">
+                        <h4>
+                            <span></span>花王</h4>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="col-xs-4">
+                                    <img src="images/versionTwo/MotherChild/MotherChild-img-hw.jpg" />
+                                </div>
+                                <div class="col-xs-8">
+                                    <h5 class="mui-ellipsis">花王</h5>
+                                    <span>参考价：
+                                        <small>420.00</small> 元</span>
+                                    <!-- <div class="two-pro-price">
+                                        <span>商城价：</span>
+                                        <span class="price">￥365.00</span>
+                                        <span class="quan">+ 365元购物券</span>
+                                    </div> -->
+                                    <div class="two-pro-price two-vip">
+                                        <img src="images/versionTwo/two-icon-vip.png" />
+                                        <span>会员价：</span>
+                                        <span class="price">￥300.00</span>
+                                    </div>
+                                    <div class="pl-eva">
+                                        <strong>65条评价</strong>
+                                        <strong>93%好评</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="hot-list-1">
+                        <h4>
+                            <span></span>帮保洁</h4>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="col-xs-4">
+                                    <img src="images/versionTwo/MotherChild/MotherChild-img-bbs.jpg" />
+                                </div>
+                                <div class="col-xs-8">
+                                    <h5 class="mui-ellipsis">帮保洁</h5>
+                                    <span>参考价：
+                                        <small>420.00</small> 元</span>
+                                    <!-- <div class="two-pro-price">
+                                        <span>商城价：</span>
+                                        <span class="price">￥365.00</span>
+                                        <span class="quan">+ 365元购物券</span>
+                                    </div> -->
+                                    <div class="two-pro-price two-vip">
+                                        <img src="images/versionTwo/two-icon-vip.png" />
+                                        <span>会员价：</span>
+                                        <span class="price">￥300.00</span>
+                                    </div>
+                                    <div class="pl-eva">
+                                        <strong>65条评价</strong>
+                                        <strong>93%好评</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hot-list-1">
+                        <h4>
+                            <span></span>尤妮佳</h4>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="col-xs-4">
+                                    <img src="images/versionTwo/MotherChild/MotherChild-img-lnj.jpg" />
+                                </div>
+                                <div class="col-xs-8">
+                                    <h5 class="mui-ellipsis">精油皂</h5>
+                                    <span>参考价：
+                                        <small>420.00</small> 元</span>
+                                    <!-- <div class="two-pro-price">
+                                        <span>商城价：</span>
+                                        <span class="price">￥365.00</span>
+                                        <span class="quan">+ 365元购物券</span>
+                                    </div> -->
+                                    <div class="two-pro-price two-vip">
+                                        <img src="images/versionTwo/two-icon-vip.png" />
+                                        <span>会员价：</span>
+                                        <span class="price">￥300.00</span>
+                                    </div>
+                                    <div class="pl-eva">
+                                        <strong>65条评价</strong>
+                                        <strong>93%好评</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="mui/js/mui.min.js"></script>
+    <script>
+        var info = document.getElementById("info");
+        mui('#picture').on('tap', '.mui-popover-action li>a', function() {
+            var a = this,
+                parent;
+            //根据点击按钮，反推当前是哪个actionsheet
+            for (parent = a.parentNode; parent != document.body; parent = parent.parentNode) {
+                if (parent.classList.contains('mui-popover-action')) {
+                    break;
+                }
+            }
+            //关闭actionsheet
+            mui('#' + parent.id).popover('toggle');
+            info.innerHTML = a.innerHTML;
+        })
+    </script>
+</body>
+
+</html>

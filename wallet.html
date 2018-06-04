@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>钱包</title>
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone = no" />
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="icon/iconfont.js"></script>
+    <script src="js/echarts.min.js"></script>
+</head>
+
+<body style="background: #f2f2f2;">
+<div class="r-wallet-container">
+    <!-- <div class="r-content"> -->
+        <!-- header -->
+        <!-- <div class="r-wallet-header">
+            <div class="r-wallet-header-center">
+                钱包
+            </div>
+            <div class="r-wallrt-header-left">
+                    <a href="javascript:history.back(-1)"><返回</a>
+            </div>
+        </div> -->
+
+        <!-- 红包价值 -->
+        <div class="r-wallet-content">
+            <h5>我的红包股价值</h5>
+            <span><a>￥</a>0.5756988</span>
+            <p class="r-wallet-confirm"><a href="withdraw.html">提现</a></p>
+            <a href="#" class="r-wallet-c-a1"></i>我的红包股价值=进入红包股价 x 我的红包股数</a>
+        </div>
+
+        <!-- 股价 -->
+        <div class="r-wallet-stork">
+            <ul>
+                <li>
+                    <a href="#">
+                        <h5>0.012916578</h5>
+                        <span>今日红包股价</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h5>1037</h5>
+                        <span>我的红包股</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="r-wallet-stork-bottom">
+                <p><i class="icon iconfont icon-dengpao"></i>红包股为模拟发行股票，受法律限制，仅在平台内使用</p>
+            </div>
+            <div class="main-text">
+                    <a href="#">红包股走势</a>
+                    <p class="main-text-text">0.375</p>
+            </div>
+           
+        </div>
+        <div id="main">
+        </div>
+
+        
+
+        <div class="r-wallet-b-t">
+            <div class="r-wallet-b-t-t">
+                <a href="#">红包股问答</a>
+            </div>
+        </div>
+
+
+        <div class="r-wallet-bottom-txt">
+            <ul>
+                <li>
+                    <a href="#">
+                        <h5>如何获取红包股</h5>
+                        <span>•</span><p>领取红包、领取优惠券消费可直接增加你的红包股数。</p>
+                    </a>
+                 </li>
+                <li><a href="#">
+                    <h5>红包股价如何增长</h5>
+                    <span>•</span><p>平台每新增一个用户开启红包，红包金额10%将会平均分给平台的所有红包股。平台新增用户开启红包越多红包股价增长越快。</p>
+                    <p>平台每新增一笔在线消费支付，消费金额1%将会平均分给平台的所有红包股。在线支付越多红包股价增长越快。</p>
+                        <span>•</span>
+                </a></li>
+                <li><a href="#">
+                    <h5>红包股的规则</h5>
+                    <span>•</span><p>连续超过一周未登陆兑客红包，则之后的每7天，你的红包股数将减少1%。</p>
+                </a></li>
+            </ul>
+            
+        </div>
+        <div class="r-wallet-bottom-b">
+                <p>兑客红包在法律允许的范围内保留对本规则条款的解释权，</p>
+                <p>并根据需要取消则或增删，修改本条款，具体规则以官方公布为准</p>
+        </div>
+
+    <!-- </div> -->
+</div>
+
+
+</body>
+<script src="./js/jquery-3.3.1.min.js "></script>
+<script src="./mui/js/mui.min.js "></script>
+<script src="./js/rem.js"></script>
+
+
+
+<script type="text/javascript">
+//折线图
+var myChart = echarts.init(document.getElementById('main'));
+var option={
+    toolbox: {
+        feature: {
+            mark: {
+                show: false
+            },
+            dataView: {
+                show: false,
+                readOnly: true
+            },
+            magicType: {
+                show: false,
+                type: ["line", "bar"]
+            },
+            restore: {
+                show: false
+            },
+            saveAsImage: {
+                show: false
+            },
+            dataZoom: {
+                show: false
+            }
+        }
+    },
+    calculable: true,
+    tooltip: {
+        trigger: "axis",
+        show: false,
+        backgroundColor: "rgba(0,0,0,0.7)"
+    },
+    xAxis: [
+        {
+            type: "category",
+            name: "",
+            axisLine: {
+                onZero: false,
+                show: false
+            },
+            boundaryGap: false,
+            // 折线走势x轴坐标数据
+            data: ["03.04", "03.08", "03.25", "04.10", "04.27", "05.30", "06.10"],
+            splitLine: {
+                show: false
+            },
+            axisTick: {
+                show: false
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: "value",
+            splitLine: {
+                show: false
+            },
+            splitArea: {
+                show: false
+            },
+            axisLine: {
+                show: false
+            },
+            axisTick: {
+                show: false,
+                interval: 0
+            },
+            nameTextStyle: {
+                color: "rgb(255, 255, 255)"
+            },
+            axisLabel: {
+                show: false
+            }
+        }
+    ],
+    series: [
+        {
+            name: "-",
+            type: "line",
+            smooth: false,
+            // 折线图走势y轴坐标
+            data: [0, 0.1, 0.28, 0.35, 0.37, 0.4, 0.5],
+            symbol: "droplet",
+            markPoint: {
+                data: []
+            },
+            tooltip: {
+                show: false
+            }
+        }
+    ],
+    title: {
+        text: "股价（元）",
+        textStyle: {
+            color: "rgb(102, 102, 102)",
+            fontSize: 15,
+            fontStyle: "normal",
+            fontWeight: "normal",
+            baseline: "bottom",
+            align: "right"
+        },
+        borderWidth: 0,
+        x: "left",
+        y: "top",
+        textAlign: "left",
+        subtext: "",
+        link: "http://"
+    },
+    // backgroundColor: "rgba(204, 204, 204, 0.08)"
+}
+//渲染折线图
+myChart.setOption(option);
+
+
+// 显示折线图最后一个点的数据
+var options=option.series[0].data[option.series[0].data.length-1]
+console.log(options)
+var mainText=document.querySelector(".main-text-text");
+mainText.innerHTML=options;
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</html>
